@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <section className="mt-[200px] pb-0 lg:pb-[207px] px-[100px] md:px-[207px] ">
       <div className="flex flex-col lg:flex-row gap-x-[101px] gap-y-4 w-full h-full lg:w-[1199px] lg:h-[370px]">
-        <div className="flex flex-col w-[393px]">
+        <div className="flex flex-col w-1/2">
           <Image src="/logo.svg" alt={"Footer Logo"} width={177} height={50} />
           <h1 className="mt-[18px] text-[12px] lg:text-[16px] leading-[150%] tracking-[2%] w-1/2 md:w-full">
             It is a long established fact that a reader will be distracted
@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col">
           <h1 className="text-[25px]">Pages</h1>
-          <ul className="space-y-2 mt-4">
+          <ul className="mt-4 space-y-4">
             <li className="text-[16px] ">About</li>
             <li>Our Projects</li>
             <li>Our Team</li>
@@ -31,8 +31,8 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h1 className="text-[16px] md:text-[20px]">Services</h1>
-          <ul className="mt-4 space-y-2">
+          <h1 className="text-[16px] md:text-[20px] lg:text-[25px]">Services</h1>
+          <ul className="mt-4">
             <p>Kitchen</p>
             <p>Living Area</p>
             <p>Bathroom</p>

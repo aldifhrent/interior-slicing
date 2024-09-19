@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <>
       <Wrapper>
-        <header className="mt-[44px] ">
+        <header>
           <div className="flex justify-between items-center">
             <div className="w-[177px] h-[177px] relative">
             <Image src="/Logo.svg" fill alt="Logo" className="absolute" />

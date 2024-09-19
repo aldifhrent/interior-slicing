@@ -21,8 +21,8 @@ const statistics = [
 
 const Counter = () => {
   return (
-    <div className="bg-[#F4F0EC] mt-[200px] w-full h-full lg:px-[419px] py-[151px]">
-      <div className="grid grid-cols-1 justify-center lg:grid-cols-4 divide-y-2 lg:divide-y-0 lg:divide-x-2 text-center divide-[#CDA274] gap-y-8 lg:gap-y-0 gap-x-8 ">
+    <section className="bg-[#F4F0EC] mt-[200px] w-full h-full lg:px-[200px] py-[151px]">
+      <div className="grid grid-cols-1 justify-center lg:grid-cols-4 divide-y-2 lg:divide-y-0 lg:divide-x-2 text-center divide-[#CDA274] gap-y-8 gap-x-8 ">
         {statistics.map((stat, index: number) => (
           <div key={index}>
             <h1
@@ -44,7 +44,7 @@ const Counter = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

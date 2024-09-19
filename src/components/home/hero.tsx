@@ -15,7 +15,7 @@ const JostFont = Jost({
 const Hero = () => {
   return (
     <Wrapper className="mt-4 md:mt-[57px] mx-1 md:mx-4">
-      <section className="flex bg-heros bg-cover h-full bg-no-repeat rounded-[40px] py-[100px] md:py-[150px] lg:py-[208px] px-[20px] md:px-[40px] lg:pl-[52px] w-full">
+      <section className="flex bg-heros bg-cover bg-center h-full bg-no-repeat rounded-[40px] py-[100px] md:py-[150px] lg:py-[208px] px-[20px] md:px-[40px] lg:pl-[52px] w-full">
         <div className="w-full lg:w-1/2 md:w-1/2 ">
           <h1
             className={cn(

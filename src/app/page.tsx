@@ -11,17 +11,19 @@ import Testimonial from "@/components/home/testimonial";
 import Work from "@/components/home/work";
 
 export default function Home() {
-  return <main className="overflow-y-hidden">
-    <Header/>
-    <Hero/>
-    <Work/>
-    <AboutUs/>
-    <Testimonial/>
-    <Client/>
-    <Projects/>
-    <Counter/>
-    <Blog/>
-    <Contact/>
-    <Footer/>
-  </main>;
+  return (
+    <main className="flex flex-col overflow-hidden">
+      <Header />
+      <Hero />
+      <Work />
+      <AboutUs />
+      <Testimonial />
+      <Client />
+      <Projects />
+      <Counter />
+      <Blog />
+      <Contact />
+      <Footer />
+    </main>
+  );
 }

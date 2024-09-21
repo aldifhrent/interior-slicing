@@ -15,32 +15,34 @@ const JostFont = Jost({
 
 const Projects = () => {
   return (
-    <Wrapper className="mt-[150px]">
-      <div className="flex flex-col items-center">
-        <h1
-          className={cn(
-            "text-center text-[50px] text-[#292F36]",
-            DMSerif.className
-          )}
-        >
-          Follow Our Projects
-        </h1>
-        <p className="text-center w-1/2">
-          It is a long established fact that a reader will be distracted by the
-          of readable content of page lookings at its layouts points.
-        </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-x-12 gap-y-12 mt-[93px]">
-          {[1, 2, 3,4 ].map((index) => (
-            <ProjectCard
-              key={index}
-              image={"/projects/01.svg"}
-              title={"Modern Kitchen"}
-              type={"Decor / Artchitecture"}
-            />
-          ))}
+    <section className="mt-[150px] px-4">
+      <div className="container">
+        <div className="flex flex-col items-center">
+          <h1
+            className={cn(
+              "text-center text-[50px] text-[#292F36]",
+              DMSerif.className
+            )}
+          >
+            Follow Our Projects
+          </h1>
+          <p className="text-center w-1/2">
+            It is a long established fact that a reader will be distracted by
+            the of readable content of page lookings at its layouts points.
+          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-x-12 gap-y-12 mt-[93px]">
+            {[1, 2, 3, 4].map((index) => (
+              <ProjectCard
+                key={index}
+                image={"/projects/01.svg"}
+                title={"Modern Kitchen"}
+                type={"Decor / Artchitecture"}
+              />
+            ))}
+          </div>
         </div>
       </div>
-    </Wrapper>
+    </section>
   );
 };
 

@@ -24,33 +24,45 @@ const TestimonialCard = ({
   testimonial,
 }: TestimonialCardProps) => {
   return (
-    <div className="bg-white px-[37px] pt-4 lg:pt-5 w-full rounded-[18px] mx-2">
+    <div className="bg-white px-[37px] pt-4 lg:pt-5 w-full h-full rounded-[18px] shadow-lg">
       <div className="flex gap-x-[23px]">
-        <div className="flex items-center gap-x-[23px]">
-        <div className="relative h-[60px] w-[60px] ">
-          <Image src="/avatars/avatar-1.svg" fill alt="Image"/>
+        <div className="flex items-center gap-4 justify-center">
+          <div>
+            <Image
+              src="/avatars/avatar-1.svg"
+              height={60}
+              width={60}
+              alt="Image"
+              className="max-w-none"
+            />
+          </div>
+          <div className="flex flex-col items-centerjustify-center w-full">
+            <p
+              className={cn(
+                "text-[12px] md:text-[16px] text-[#292F36] leading-[150%] tracking-[1%]"
+              )}
+            >
+              {name}
+            </p>
+            <p
+              className={cn(
+                "text-[#4D5053] text-[12px] md:text-[14px] tracking-[150%] leading-[1%] mt-2 text-justify",
+                JostFont.className
+              )}
+            >
+              {location}
+            </p>
+          </div>
         </div>
-        <div className="flex flex-col items-centerjustify-center w-full">
-          <p
-            className={cn(
-              "text-[12px] md:text-[16px] text-[#292F36] leading-[150%] tracking-[1%]"
-            )}
-          >
-            {name}  
-          </p>
-          <p
-            className={cn(
-              "text-[#4D5053] text-[12px] md:text-[14px] tracking-[150%] leading-[1%] mt-2 text-justify",
-              JostFont.className
-            )}
-          >
-            {location}
-          </p>
-        </div>
-        </div>
-        
       </div>
-      <p className={cn("mb-4 mt-0 lg:mt-[12px] text-[#4D5053] text-[16px] md:text-[14px]", JostFont.className)}>{testimonial}</p>
+      <p
+        className={cn(
+          "mb-4 mt-4  text-[#4D5053] text-[16px] md:text-[14px] w-full",
+          JostFont.className
+        )}
+      >
+        {testimonial}
+      </p>
     </div>
   );
 };

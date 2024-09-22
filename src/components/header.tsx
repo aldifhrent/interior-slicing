@@ -1,5 +1,4 @@
 import React from "react";
-import Wrapper from "@/components/wrapper";
 import Image from "next/image";
 import { CiSearch } from "react-icons/ci";
 import Link from "next/link";

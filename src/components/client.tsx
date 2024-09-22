@@ -1,5 +1,4 @@
 import React from "react";
-import Wrapper from "../wrapper";
 import Image from "next/image";
 
 const ClientData = [

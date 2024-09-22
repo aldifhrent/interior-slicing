@@ -1,4 +1,4 @@
-import Wrapper from "@/components/wrapper";
+import { DMSerif, JostFont } from "@/app/app.font";
 import { cn } from "@/lib/util";
 import { DM_Serif_Display, Jost } from "next/font/google";
 
@@ -20,22 +20,16 @@ const WorksData = [
   },
 ];
 
-const DMSerif = DM_Serif_Display({
-  subsets: ["latin"],
-  weight: "400",
-});
-
-const JostFont = Jost({
-  subsets: ["latin"],
-});
-
 const Work = () => {
   return (
     <section className="mt-[100px] ">
       <div className="container">
         <div className="flex flex-col xl:flex-row  lg:flex-row justify-center md:flex-row gap-x-[42px] items-center mb-[200px] gap-y-[42px] md:gap-y-0 ">
           {WorksData.map((work) => (
-            <div key={work.title} className="text-center w-full h-full hover:outline hover:rounded-lg p-4 cursor-pointer">
+            <div
+              key={work.title}
+              className="text-center w-full h-full hover:outline hover:rounded-lg p-4 cursor-pointer"
+            >
               <h2
                 className={cn(
                   "text-[25px] md:text-3xl lg:text-4xl leading-[125%] text-[#292F36]",

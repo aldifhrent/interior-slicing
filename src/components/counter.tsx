@@ -1,16 +1,6 @@
+import { DMSerif, JostFont } from "@/app/app.font";
 import { cn } from "@/lib/util";
-import { DM_Serif_Display, Jost } from "next/font/google";
 import React from "react";
-
-const DMSerif = DM_Serif_Display({
-  subsets: ["latin"],
-  weight: ["400"],
-  display: "swap",
-});
-
-const JostFont = Jost({
-  subsets: ["latin"],
-});
 
 const statistics = [
   { value: 12, label: "Years of Experience" },

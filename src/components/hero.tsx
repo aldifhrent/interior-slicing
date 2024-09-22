@@ -1,16 +1,7 @@
 import Image from "next/image";
-import Wrapper from "../wrapper";
 import { DM_Serif_Display, Jost } from "next/font/google";
 import { cn } from "@/lib/util";
-
-const DMSerif = DM_Serif_Display({
-  subsets: ["latin"],
-  weight: "400",
-});
-
-const JostFont = Jost({
-  subsets: ["latin"],
-});
+import { DMSerif } from "@/app/app.font";
 
 const Hero = () => {
   return (

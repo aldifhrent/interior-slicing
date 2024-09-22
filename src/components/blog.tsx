@@ -2,15 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { DM_Serif_Display, Jost } from "next/font/google";
 import { cn } from "@/lib/util";
-
-const DMSerif = DM_Serif_Display({
-  subsets: ["latin"],
-  weight: "400",
-});
-
-const JostFont = Jost({
-  subsets: ["latin"],
-});
+import { DMSerif, JostFont } from "@/app/app.font";
 
 const BlogData = [
   {
@@ -96,12 +88,19 @@ function BlogCard({ image, type, title, date }: BlogCardProps) {
           </span>
         </div>
         <div className="mt-4 sm:mt-[21px]">
-          <h2 className={cn("text-xl sm:text-[25px] leading-tight sm:leading-[125%] tracking-[2%] text-[#292F36]")}>
+          <h2
+            className={cn(
+              "text-xl sm:text-[25px] leading-tight sm:leading-[125%] tracking-[2%] text-[#292F36]"
+            )}
+          >
             {title}
           </h2>
           <div className="flex justify-between items-center mt-4 sm:mt-[30px]">
             <time className="text-[#4D5053] text-xs sm:text-sm">{date}</time>
-            <button className="text-[#CDA274] text-lg sm:text-xl font-bold rounded-full bg-[#F4F0EC] px-4 sm:px-[23px] py-3 sm:py-[19.31px] group-hover:bg-white group-hover:text-[#292F36] transition-colors" aria-label="Read more">
+            <button
+              className="text-[#CDA274] text-lg sm:text-xl font-bold rounded-full bg-[#F4F0EC] px-4 sm:px-[23px] py-3 sm:py-[19.31px] group-hover:bg-white group-hover:text-[#292F36] transition-colors"
+              aria-label="Read more"
+            >
               &rarr;
             </button>
           </div>
@@ -110,5 +109,3 @@ function BlogCard({ image, type, title, date }: BlogCardProps) {
     </div>
   );
 }
-
-

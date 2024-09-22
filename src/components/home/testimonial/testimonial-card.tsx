@@ -24,7 +24,7 @@ const TestimonialCard = ({
   testimonial,
 }: TestimonialCardProps) => {
   return (
-    <div className="bg-white px-[37px] pt-4 lg:pt-5 w-full h-full rounded-[18px] shadow-lg">
+    <div className="bg-white px-[37px] pt-4 lg:pt-5 w-full h-full rounded-[18px] hover:shadow-lg hover:outline cursor-pointer ">
       <div className="flex gap-x-[23px]">
         <div className="flex items-center gap-4 justify-center">
           <div>

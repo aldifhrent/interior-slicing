@@ -11,12 +11,12 @@ const config: Config = {
     container: {
       center: true,
       padding: {
-        default: "4rem",
-        sm: "1rem",
-        md: "2rem",
+        DEFAULT: "1rem",
+        sm: "2rem",
+        md: "3rem",
         lg: "4rem",
-        xl: "14rem",
-        "2xl": "14rem",
+        xl: "5rem",
+        "2xl": "6rem",
       },
     },
     extend: {

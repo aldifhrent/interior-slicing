@@ -15,10 +15,10 @@ const JostFont = Jost({
 
 const AboutUs = () => {
   return (
-    <section className="px-4 xl:px-0">
+    <section className="px-4">
       <div className="container">
         <div className="flex flex-col-reverse md:flex-row gap-x-[75px]">
-          <div className="flex flex-col justify-center max-w-sm xl:max-w-none mt-8 md:mt-0">
+          <div className="flex flex-col justify-center  xl:max-w-none mt-8 w-1/2">
             <h1
               className={cn(
                 "text-[40px] md:text-[50px] leading-[125%] tracking-[2%] text-[#292F36]",
@@ -62,13 +62,13 @@ const AboutUs = () => {
               Get Free Estimate<span className="text-[#CDA274]">-&gt;</span>
             </button>
           </div>
-          <div className="w-full lg:w-1/2 rounded-tr-[260px] rounded-bl-[50px] overflow-hidden">
+          <div className="w-1/2 rounded-tr-[260px] rounded-bl-[50px] overflow-hidden">
             <Image
               src="/about-us.svg"
-              width={700}
+              width={600}
               height={100}
               alt="About Us"
-              className="max-w-lg md:max-w-xs lg:max-w-lg xl:max-w-none"
+              className="max-w-none"
             />
           </div>
         </div>

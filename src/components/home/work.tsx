@@ -35,7 +35,7 @@ const Work = () => {
       <div className="container">
         <div className="flex flex-col xl:flex-row  lg:flex-row justify-center md:flex-row gap-x-[42px] items-center mb-[200px] gap-y-[42px] md:gap-y-0 ">
           {WorksData.map((work) => (
-            <div key={work.title} className="text-center w-full h-full">
+            <div key={work.title} className="text-center w-full h-full hover:outline hover:rounded-lg p-4 cursor-pointer">
               <h2
                 className={cn(
                   "text-[25px] md:text-3xl lg:text-4xl leading-[125%] text-[#292F36]",
@@ -52,7 +52,7 @@ const Work = () => {
               >
                 {work.description}
               </p>
-              <button className="mt-[52px]">Read More -&gt;</button>
+              <button className="mt-[52px] px-4 py-1">Read More -&gt;</button>
             </div>
           ))}
         </div>

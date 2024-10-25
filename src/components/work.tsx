@@ -32,7 +32,7 @@ const Work = () => {
             >
               <h2
                 className={cn(
-                  "text-[25px] md:text-3xl lg:text-4xl leading-[125%] text-[#292F36]",
+                  "text-[25px] md:text-3xl lg:text-4xl leading-[125%] text-[#292F36] text-nowrap",
                   DMSerif.className
                 )}
               >
@@ -40,7 +40,7 @@ const Work = () => {
               </h2>
               <p
                 className={cn(
-                  "mt-5 text-[22px] leading-[150%] tracking-[1%] text-center",
+                  "mt-5 text-lg lg:text-[22px] leading-[150%] tracking-[1%] text-center",
                   JostFont.className
                 )}
               >

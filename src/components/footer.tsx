@@ -5,26 +5,40 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   const socialIcons = [FaFacebook, FaTwitter, FaLinkedin, FaInstagram];
   const pages = ["About", "Our Projects", "Our Team", "Contact Us", "Services"];
-  const services = ["Kitchen", "Living Area", "Bathroom", "Dining Hall", "Bedroom"];
+  const services = [
+    "Kitchen",
+    "Living Area",
+    "Bathroom",
+    "Dining Hall",
+    "Bedroom",
+  ];
   const contactInfo = [
     "55 East Birchwood Ave. Brooklyn, New York 11201",
     "contact@interno.com",
-    "(123) 456 - 7890"
+    "(123) 456 - 7890",
   ];
 
-  const FooterSection = ({ title, items }: { title: string; items: string[] }) => (
+  const FooterSection = ({
+    title,
+    items,
+  }: {
+    title: string;
+    items: string[];
+  }) => (
     <div className="flex flex-col mb-8 sm:mb-0">
       <h1 className="text-[20px] sm:text-[25px] mb-4 font-semibold">{title}</h1>
       <ul className="space-y-2 sm:space-y-4">
         {items.map((item, index) => (
-          <li key={index} className="text-[14px] sm:text-[16px]">{item}</li>
+          <li key={index} className="text-[14px] sm:text-[16px]">
+            {item}
+          </li>
         ))}
       </ul>
     </div>
   );
 
   return (
-    <footer className="mt-[100px] sm:mt-[200px] px-4 sm:px-6 lg:px-8">
+    <footer className="mt-[100px] sm:mt-[200px] px-4 sm:px-6 lg:px-8 mb-12">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
           <div className="flex flex-col max-w-sm col-span-1 sm:col-span-2 lg:col-span-1">

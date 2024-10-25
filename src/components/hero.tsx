@@ -20,7 +20,7 @@ const Hero = () => {
               </h1>
               <p
                 className={cn(
-                  "text-[14px] md:text-[20px] lg:text-[22px] leading-[140%] md:leading-[150%] tracking-[1%] text-[#4D5053] mt-[12px] md:mt-[16px] lg:mt-[18px]"
+                  "text-[14px] md:text-[16px] lg:text-[22px] leading-[140%] md:leading-[150%] tracking-[1%] text-[#4D5053] mt-[12px] md:mt-[16px] lg:mt-[18px]"
                 )}
               >
                 There are many variations of the passages of lorem ipsum from

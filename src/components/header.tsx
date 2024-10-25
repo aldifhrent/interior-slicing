@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { CiSearch } from "react-icons/ci";
 import Link from "next/link";
+import { BiMenu } from "react-icons/bi";
 
 const Header = () => {
   return (
@@ -19,29 +20,32 @@ const Header = () => {
                 className="max-w-none"
               />
             </Link>
-            <nav className="hidden md:flex gap-x-7 items-center">
-              <p className="hover:underline hover:underline-offset-4 hover:cursor-pointer">
+            <nav className="hidden lg:flex gap-x-7 items-center">
+              <p className="hover:underline hover:underline-offset-8 hover:cursor-pointer">
                 Home
               </p>
-              <p className="hover:underline hover:underline-offset-4 hover:cursor-pointer">
+              <p className="hover:underline hover:underline-offset-8 hover:cursor-pointer">
                 Pages
               </p>
-              <p className="hover:underline hover:underline-offset-4 hover:cursor-pointer">
+              <p className="hover:underline hover:underline-offset-8 hover:cursor-pointer">
                 Services
               </p>
-              <p className="hover:underline hover:underline-offset-4 hover:cursor-pointer">
+              <p className="hover:underline hover:underline-offset-8 hover:cursor-pointer">
                 Project
               </p>
-              <p className="hover:underline hover:underline-offset-4 hover:cursor-pointer">
+              <p className="hover:underline hover:underline-offset-8 hover:cursor-pointer">
                 Blog
               </p>
-              <p className="hover:underline hover:underline-offset-4 hover:cursor-pointer">
+              <p className="hover:underline hover:underline-offset-8 hover:cursor-pointer">
                 Contact
               </p>
               <button>
                 <CiSearch className="w-6 h-6" />
               </button>
             </nav>
+            <div className="block lg:hidden">
+              <BiMenu />
+            </div>
           </div>
         </div>
       </header>

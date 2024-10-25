@@ -79,7 +79,6 @@ function BlogCard({ image, type, title, date }: BlogCardProps) {
           <Image
             src={image}
             fill
-            objectFit="cover"
             alt={`Blog post: ${title}`}
             className="rounded-2xl sm:rounded-t-[45px]"
           />
